@@ -8285,11 +8285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sam/Desktop/Industry Connect/Internship/Project/Mars_advance/Mars_Specflow/Mars_Specflow.csproj",
+      "projectUniqueName": "/Users/sam/Mars_Specflow/Mars_Specflow.csproj",
       "projectName": "Mars_Specflow",
-      "projectPath": "/Users/sam/Desktop/Industry Connect/Internship/Project/Mars_advance/Mars_Specflow/Mars_Specflow.csproj",
+      "projectPath": "/Users/sam/Mars_Specflow/Mars_Specflow.csproj",
       "packagesPath": "/Users/sam/.nuget/packages/",
-      "outputPath": "/Users/sam/Desktop/Industry Connect/Internship/Project/Mars_advance/Mars_Specflow/obj/",
+      "outputPath": "/Users/sam/Mars_Specflow/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/sam/.config/NuGet/NuGet.Config"

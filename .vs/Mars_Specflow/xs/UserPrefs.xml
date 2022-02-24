@@ -1,24 +1,36 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{3158537B-B303-4B28-926C-930BFB6B7AB7}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/ProfilePage.cs">
     <Files>
       <File FileName="Pages/HomePage.cs" Line="1" Column="1" />
-      <File FileName="Pages/ProfilePage.cs" />
+      <File FileName="Pages/ProfilePage.cs" Line="126" Column="10" />
       <File FileName="Pages/ListingManagementPage.cs" />
-      <File FileName="Pages/ServiceListingPage.cs" Line="1" Column="1" />
+      <File FileName="Pages/ServiceListingPage.cs" />
       <File FileName="Pages/ReceivedRequestPage.cs" />
       <File FileName="Pages/SentRequestPage.cs" />
       <File FileName="Pages/SearchPage.cs" />
       <File FileName="Pages/NotificationPage.cs" />
+      <File FileName="Tests/AddLanguageToProfile.cs" />
+      <File FileName="Helpers/Driver.cs" />
+      <File FileName="Features/AddLanguageToProfile.feature" Line="5" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Mars_Specflow" expanded="True">
             <Node name="Mars_Specflow" expanded="True">
-              <Node name="Features" selected="True" />
-              <Node name="Pages" expanded="True" />
+              <Node name="Features" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="ProfilePage.cs" selected="True" />
+              </Node>
+              <Node name="Tests" expanded="True" />
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Mars_Specflow" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

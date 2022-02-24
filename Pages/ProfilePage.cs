@@ -88,24 +88,41 @@ namespace Mars_Specflow.Pages
 
         }
 
-        public static void addLanguage()
+        public static void addLanguageBTN()
         {
             //Click Add New button to add new language
             Driver.driver.FindElement(By.XPath("//table[@class='ui fixed table']//tr/th[3]/div")).Click();
+        }
 
+        public static void enterLanguage()
+        {
             //Add one of my languages
             Driver.driver.FindElement(By.XPath("//input[@placeholder='Add Language']")).Clear();
             Driver.driver.FindElement(By.XPath("//input[@placeholder='Add Language']")).SendKeys("Chinese");
+        }
 
+        public static void selectLevel()
+        {
             //Click the drop down menu of level
             Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']")).Click();
 
             //Select my lanaguage level
             Driver.driver.FindElement(By.XPath("//select[@class='ui dropdown']/option[5]")).Click();
+            Wait.WaitToBeVisible(Driver.driver, "Xpath", "//select[@class='ui dropdown']/option[5]", 3);
+        }
 
+        public static void clickAddtoSaveLanguage()
+        {
             //Click add button to save my selection
             Driver.driver.FindElement(By.XPath("//input[@class='ui teal button']")).Click();
 
+        }
+
+        public static void assertLanguageAdded()
+        {
+
+            IWebElement LanguageText = Driver.driver.FindElement(By.XPath("//td[text()='Chinese']"));
+            Assert.IsTrue(LanguageText.Displayed);
         }
 
         public static void addSkill()

@@ -13,7 +13,7 @@ namespace Mars_Specflow.Helpers
         {
             //Defining the browser
             driver = new ChromeDriver();
-            //TurnOnWait();
+            TurnOnWait();
 
             //Maximise the window
             driver.Manage().Window.Maximize();
