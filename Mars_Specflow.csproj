@@ -53,8 +53,10 @@
     <None Remove="Microsoft.CodeCoverage" />
     <None Remove="SpecFlow.NUnit" />
     <None Remove="Tests\" />
+    <None Remove="Features\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Tests\" />
+    <Folder Include="Features\" />
   </ItemGroup>
 </Project>
