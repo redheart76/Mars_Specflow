@@ -1,14 +1,14 @@
-﻿using OpenQA.Selenium;
+﻿using AventStack.ExtentReports;
+using OpenQA.Selenium;
 using System;
 using System.Text;
-using RelevantCodes.ExtentReports;
 namespace Mars_Specflow.Helpers
 {
     public class CommonMethods
     {
-        
-            //Screenshots
-            //Screenshot
+
+        //Screenshots
+        //Screenshot
 
         public class SaveScreenShotClass
         {
@@ -43,8 +43,9 @@ namespace Mars_Specflow.Helpers
 
         public static void ExtentReports()
         {
-            Extent = new ExtentReports(ConstantHelpers.ReportsPath, true, DisplayOrder.NewestFirst);
-            Extent.LoadConfig(ConstantHelpers.ReportXMLPath);
+            Extent = new ExtentReports();
+            //extent.Config(ConstantHelpers.ReportXMLPath);
+
         }
     }
     #endregion

@@ -247,7 +247,6 @@
 /Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/SeleniumExtras.WaitHelpers.dll
 /Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/ExcelDataReader.dll
 /Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/ExcelDataReader.DataSet.dll
-/Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/RelevantCodes.ExtentReports.dll
 /Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/Gherkin.dll
 /Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/Google.Protobuf.dll
 /Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.dll
@@ -444,3 +443,13 @@
 /Users/sam/Mars_Specflow/obj/Debug/netcoreapp3.1/Mars_Specflow.dll
 /Users/sam/Mars_Specflow/obj/Debug/netcoreapp3.1/Mars_Specflow.pdb
 /Users/sam/Mars_Specflow/obj/Debug/netcoreapp3.1/Mars_Specflow.genruntimeconfig.cache
+/Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/System.CodeDom.dll
+/Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/System.Security.Principal.Windows.dll
+/Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
+/Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
+/Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/ExtentReports.dll
+/Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Html.Abstractions.dll
+/Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.dll
+/Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll
+/Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Runtime.dll
+/Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/RazorEngine.NetCore.dll

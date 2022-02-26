@@ -8,13 +8,13 @@ namespace Mars_Specflow.Helpers
         public static string Url = "http://192.168.20.122:5000/";
 
         //ScreenshotPath
-        public static string ScreenshotPath = "/Users/sam/Desktop/Industry Connect/Internship/Project/On board task/onboarding.specflow-master/Mars_advanced/TestReports/Screenshots";
+        public static string ScreenshotPath = "/Users/sam/Mars_Specflow/TestReports/Screenshots";
 
         //ExtentReportsPath
-        public static string ReportsPath = "/Users/sam/Desktop/Industry Connect/Internship/Project/On board task/onboarding.specflow-master/Mars_advanced/TestReports/ExtentReports";
+        public static string ReportsPath = "/Users/sam/Mars_Specflow/TestReports/ExtentReports";
 
         //ReportXML Path
-        public static string ReportXMLPath = "/Users/sam/Desktop/Industry Connect/Internship/Project/On board task/onboarding.specflow-master/Mars_advanced/TestReports/ReportXML";
+        public static string ReportXMLPath = "/Users/sam/Mars_Specflow/TestReports/ReportXML";
     }
     
 }

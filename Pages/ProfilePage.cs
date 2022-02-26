@@ -147,13 +147,22 @@ namespace Mars_Specflow.Pages
 
         }
 
-        public static void addEducation()
+        public static void clickOnEducation()
         {
             //Click on Education tab
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[1]/a[3]")).Click();
 
+        }
+
+        public static void addNewEdu()
+        {
             //Click on Add New button
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/thead/tr/th[6]/div")).Click();
+        }
+        public static void enterEducationDetails()
+        {
+            
+            
 
             //Enter Uni name
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[1]/div[1]/input")).Clear();
@@ -175,17 +184,21 @@ namespace Mars_Specflow.Pages
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[2]/div[3]/select")).Click();
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[2]/div[3]/select/option[10]")).Click();
 
-            //Click on Add button to add education info
-            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[3]/div/input[1]")).Click();
+            
 
         }
 
+        public static void clickandSaveEducation()
+        {
+            //Click on Add button to add education details
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[3]/div/input[1]")).Click();
+        }
 
         public static void assertEduAdded()
         {
 
             //Assert Uni name has bee added
-            IWebElement UniNameTxt = Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/tbody/tr/td[2]"));
+            IWebElement UniNameTxt = Driver.driver.FindElement(By.XPath("//*[text()='Auckland University']"));
             Assert.IsTrue(UniNameTxt.Displayed);
         }
 

@@ -1,36 +1,44 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{3158537B-B303-4B28-926C-930BFB6B7AB7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/ProfilePage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/AddNewEducation.cs">
     <Files>
-      <File FileName="Pages/HomePage.cs" Line="1" Column="1" />
-      <File FileName="Pages/ProfilePage.cs" Line="126" Column="10" />
-      <File FileName="Pages/ListingManagementPage.cs" />
-      <File FileName="Pages/ServiceListingPage.cs" />
-      <File FileName="Pages/ReceivedRequestPage.cs" />
-      <File FileName="Pages/SentRequestPage.cs" />
-      <File FileName="Pages/SearchPage.cs" />
-      <File FileName="Pages/NotificationPage.cs" />
-      <File FileName="Tests/AddLanguageToProfile.cs" />
-      <File FileName="Helpers/Driver.cs" />
-      <File FileName="Features/AddLanguageToProfile.feature" Line="5" Column="2" />
+      <File FileName="Helpers/CommonMethods.cs" Line="48" Column="1" />
+      <File FileName="Helpers/ConstantHelpers.cs" Line="17" Column="71" />
+      <File FileName="Features/AddLanguageToProfile.feature.cs" Line="1" Column="1" />
+      <File FileName="Utilities/Start.cs" Line="47" Column="1" />
+      <File FileName="Pages/Signin.cs" Line="1" Column="1" />
+      <File FileName="Helpers/Driver.cs" Line="1" Column="1" />
+      <File FileName="Features/AddLanguageToProfile.feature" Line="1" Column="1" />
+      <File FileName="Features/AddEducation.feature" Line="5" Column="1" />
+      <File FileName="Pages/ProfilePage.cs" Line="160" Column="164" />
+      <File FileName="Tests/AddNewEducation.cs" Line="27" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Mars_Specflow" expanded="True">
             <Node name="Mars_Specflow" expanded="True">
+              <Node name="Dependencies" expanded="True" />
               <Node name="Features" expanded="True" />
-              <Node name="Helpers" expanded="True" />
-              <Node name="Pages" expanded="True">
-                <Node name="ProfilePage.cs" selected="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Tests" expanded="True">
+                <Node name="AddNewEducation.cs" selected="True" />
               </Node>
-              <Node name="Tests" expanded="True" />
+              <Node name="Utilities" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Mars_Specflow" expanded="True" selected="True" />
+          <Node name="Mars_Specflow" expanded="True">
+            <Node name="Mars_Specflow" expanded="True">
+              <Node name="Mars_Specflow.Features" expanded="True">
+                <Node name="AddANewEducationFeature" expanded="True">
+                  <Node name="AddMyEducationDetails" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
