@@ -8,7 +8,7 @@ namespace Mars_Specflow.Pages
 {
     public class ListingManagermentPage
     {
-        public void assertTitleIsDisplayed()
+        public static void assertTitleIsDisplayed()
         {
             Wait.WaitToBeVisible(Driver.driver, "Xpath", "/html/body/div/div/div/div[2]/div[1]/div[1]/table/tbody/tr/td[3]", 2);
             //Assert whether the title text is displayed
@@ -17,13 +17,13 @@ namespace Mars_Specflow.Pages
 
         }
 
-        public void editSkill()
+        public static void editSkill()
         {
             //Click on edit icon
             Driver.driver.FindElement(By.XPath("/html/body/div/div/div/div[2]/div[1]/div[1]/table/tbody/tr/td[8]/div/button[2]/i")).Click();
         }
 
-        public void deleteSkill()
+        public static void deleteSkill()
         {
             //Click delete and accept
             Driver.driver.FindElement(By.XPath("/html/body/div/div/div/div[2]/div[1]/div[1]/table/tbody/tr/td[8]/div/button[3]/i")).Click();            
@@ -32,7 +32,7 @@ namespace Mars_Specflow.Pages
 
         }
 
-        public void assertDeletion()
+        public static void assertDeletion()
         {
             Wait.WaitToBeVisible(Driver.driver, "Xpath", "/html/body/div/div/div/div[2]/h3", 2);
             //Assert whether "You do not have any service listings!" is displayed
@@ -42,7 +42,7 @@ namespace Mars_Specflow.Pages
 
        
 
-        public void assertSkillDescriptionIsDisplayed()
+        public static void assertSkillDescriptionIsDisplayed()
         {
             Wait.WaitToBeVisible(Driver.driver, "Xpath", "/html/body/div/div/div/div[2]/div[1]/div[1]/table/tbody/tr/td[4]", 2);
             //Assert whether new description is displayed

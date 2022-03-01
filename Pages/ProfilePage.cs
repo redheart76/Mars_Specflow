@@ -59,6 +59,12 @@ namespace Mars_Specflow.Pages
             Driver.driver.FindElement(By.XPath("/html/body/div/div/div/section[1]/div/div[1]/div/a[2]")).Click();
         }
 
+       //Click on profile
+       public static void myProfile()
+        {
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[1]/div/a[2]")).Click();
+        }
+
         public static void personalDetails()
         {
             //Click on Availability edit button
@@ -86,6 +92,13 @@ namespace Mars_Specflow.Pages
             //Select "More than 30 hours a week"
             Driver.driver.FindElement(By.XPath("//option[@value='2']")).Click();
 
+        }
+
+        //Assert my details have been changed
+        public static void earnTarget()
+        {
+            IWebElement earnTxt = Driver.driver.FindElement(By.XPath("//*[text()='More than $1000 per month']"));
+            Assert.IsTrue(earnTxt.Displayed);
         }
 
         public static void addLanguageBTN()
@@ -125,28 +138,46 @@ namespace Mars_Specflow.Pages
             Assert.IsTrue(LanguageText.Displayed);
         }
 
-        public static void addSkill()
+        //Click on Skills tab
+        public static void clickSkill()
         {
-            //Click on Skills tab
-            Driver.driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/div[3]/form/div[1]/a[2]")).Click();
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[1]/a[2]")).Click();
+        }
 
-            //Click on Add button to add new skill
-            Driver.driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/table/thead/tr/th[3]/div")).Click();
 
-            //Enter you skill
-            Driver.driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/div/div[1]/input")).SendKeys("Web Development");
+        //Click on Add button to add new skill
+        public static void newSkill()
+        {
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/table/thead/tr/th[3]/div")).Click();
+        }
+
+        public static void SkillDetails()
+        {
+ 
+           //Enter you skill
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/div/div[1]/input")).SendKeys("Web Development");
 
             //Click on dropdown menu
-            Driver.driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/div/div[2]/select")).Click();
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/div/div[2]/select")).Click();
 
             //Select one of the options
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/div/div[2]/select/option[3]")).Click();
 
-            //Click on Save button to save the skill
-            Driver.driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/div/span/input[1]")).Click();
-
         }
 
+        //Click on Save button to save the skill
+        public static void saveSkill()
+        {
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/div/span/input[1]")).Click();
+        }
+
+        //Assert skill has been saved
+        public static void assertSkillSaved()
+        {
+            IWebElement skillTxt = Driver.driver.FindElement(By.XPath("//*[text()='Web Development']"));
+            Assert.IsTrue(skillTxt.Displayed);
+        }
+        
         public static void clickOnEducation()
         {
             //Click on Education tab
@@ -201,53 +232,93 @@ namespace Mars_Specflow.Pages
             IWebElement UniNameTxt = Driver.driver.FindElement(By.XPath("//*[text()='Auckland University']"));
             Assert.IsTrue(UniNameTxt.Displayed);
         }
+ 
 
-        public static void addCert()
-        {
-            //Click on Certifcation tab
-            Driver.driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/div[3]/form/div[1]/a[4]")).Click();
-
-            //Click on Add New button
-            Driver.driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/thead/tr/th[4]/div")).Click();
-
-            //Enter Cert details
-            Driver.driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[1]/div/input")).SendKeys("Web development diploma");
-
-            //Enter Cert was issued from
-            Driver.driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[2]/div[1]/input")).SendKeys("Polytechnic");
-
-            //Click to select issued year
-            Driver.driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[2]/div[2]/select")).Click();
-            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[2]/div[2]/select/option[3]")).Click();
-
-            //Click on Add button to add a new certificate
-            Driver.driver.FindElement(By.XPath("//*[@id='account - profile - section']/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[3]/input[1]")).Click();
-        }
-
+        //Click on Descripton edit icon
         public static void addDescription()
         {
-            //Click on Descripton edit icon
-            Driver.driver.FindElement(By.XPath("//span[@class='button']/i")).Click();
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/div/div/div/h3/span/i")).Click();
+        }
 
-            //Enter Description
+
+        public static void enterDescriptionDetails()
+        {
+        //Enter Description
             Driver.driver.FindElement(By.XPath("//textarea[@name='value']")).Clear();
             Driver.driver.FindElement(By.XPath("//textarea[@name='value']")).SendKeys("Hi, I have a bunch of skills that can be swapped with you.");
 
-            //Click on the Save button to save the description
+        }
+
+        //Click on the Save button to save the description
+        public static void saveDescription()
+        {
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/div/div/form/div/div/div[2]/button")).Click();
+        }
+
+        //Assert saved description
+        public static void AssertDescription()
+        {
+            IWebElement DescriptionText = Driver.driver.FindElement(By.XPath("//*[text()='Hi, I have a bunch of skills that can be swapped with you.']"));
+            Assert.IsTrue(DescriptionText.Displayed);
+           
+        }
+
+        //Click on Certification tab
+        public static void CertTab()
+        {
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[1]/a[4]")).Click();
+        }
+
+        //Click on add new cert button
+        public static void addNewCert()
+        {
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/table/thead/tr/th[4]/div")).Click();
+        }
+
+        //Enter Certification details
+        public static void CertDetails()
+        {
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[1]/div/input")).SendKeys("ISTQB");
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[2]/div[1]/input")).SendKeys("ISTQB");
+
+        //Click to select year of Cert from drop down 
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[2]/div[2]/select")).Click();
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[2]/div[2]/select/option[3]")).Click();
 
         }
 
-        public static void changePassword()
+        //Click on Save button to save Certification
+        public static void saveCertBTN()
+        {
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[3]/input[1]")).Click();
+        }
+
+        //Assert the new certificate is saved
+        public static void AssertCert()
+        {
+            IWebElement newCert = Driver.driver.FindElement(By.XPath("//*[text()='ISTQB']"));
+            Assert.IsTrue(newCert.Displayed);
+        }
+
+
+        //Change the password to a new one
+        //Hover the mouse and waiting for the menu to be displayed
+        public static void uiDropdownHover()
         {
             Actions actions = new Actions(Driver.driver);
-
-            //Hover the mouse and waiting for the menu to be displayed 
             IWebElement uiDropdown = Driver.driver.FindElement(By.XPath("//*[text()='Sam']"));
             actions.MoveToElement(uiDropdown).Perform();
+        }
 
-            //Click on change password
+        //Click on change password
+        public static void changePWmenu()
+        {
             Driver.driver.FindElement(By.XPath("//*[text()='Change Password']")).Click();
+        }
+
+
+        public static void changePassword()
+        {
 
             //Enter old password
             Driver.driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/form/div[1]/input")).SendKeys("123123");
@@ -257,19 +328,28 @@ namespace Mars_Specflow.Pages
 
             //Confirm new password
             Driver.driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/form/div[3]/input")).SendKeys("456456");
+        }
 
             //Click on save button to save the new password
+        public static void savePW()
+        {
             Driver.driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/form/div[4]/button")).Click();
+        }
+           
 
-            //Change the new password back to old password for further login purpose
-            actions.MoveToElement(uiDropdown).Perform();
+        //Change the new password back to old password for further login purpose
+        public static void reversePW()
+        {
+            Actions actions = new Actions(Driver.driver);
+            IWebElement uiDropdown = Driver.driver.FindElement(By.XPath("//*[text()='Sam']"));
+            actions.MoveToElement(uiDropdown).Perform();  
+            Thread.Sleep(6000);
             Driver.driver.FindElement(By.XPath("//*[text()='Change Password']")).Click();
             Driver.driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/form/div[1]/input")).SendKeys("456456");
             Driver.driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/form/div[2]/input")).SendKeys("123123");
             Driver.driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/form/div[3]/input")).SendKeys("123123");
             //Click on save button to save the new password
             Driver.driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/form/div[4]/button")).Click();
-
         }
 
         //Click on Search icon

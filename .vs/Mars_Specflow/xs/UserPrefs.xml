@@ -1,28 +1,31 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{3158537B-B303-4B28-926C-930BFB6B7AB7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/AddNewEducation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Helpers/Driver.cs">
     <Files>
-      <File FileName="Helpers/CommonMethods.cs" Line="48" Column="1" />
-      <File FileName="Helpers/ConstantHelpers.cs" Line="17" Column="71" />
-      <File FileName="Features/AddLanguageToProfile.feature.cs" Line="1" Column="1" />
-      <File FileName="Utilities/Start.cs" Line="47" Column="1" />
-      <File FileName="Pages/Signin.cs" Line="1" Column="1" />
+      <File FileName="Tests/AddNewEducation.cs" Line="45" Column="48" />
+      <File FileName="Features/EditPersonalDetails.feature" Line="9" Column="34" />
+      <File FileName="Tests/AddNewSkill.cs" Line="44" Column="50" />
+      <File FileName="Pages/ListingManagementPage.cs" Line="45" Column="23" />
+      <File FileName="Features/AddDescriptionToProfile.feature" Line="8" Column="6" />
+      <File FileName="Tests/AddDescriptionToProfile.cs" Line="23" Column="24" />
+      <File FileName="Features/AddCertificate.feature" Line="10" Column="38" />
+      <File FileName="Tests/AddCertificate.cs" Line="44" Column="44" />
+      <File FileName="Pages/ProfilePage.cs" Line="345" Column="57" />
+      <File FileName="Features/ChangePassword.feature" Line="11" Column="90" />
+      <File FileName="Tests/ChangePassword.cs" Line="44" Column="43" />
+      <File FileName="Helpers/ConstantHelpers.cs" Line="1" Column="1" />
       <File FileName="Helpers/Driver.cs" Line="1" Column="1" />
-      <File FileName="Features/AddLanguageToProfile.feature" Line="1" Column="1" />
-      <File FileName="Features/AddEducation.feature" Line="5" Column="1" />
-      <File FileName="Pages/ProfilePage.cs" Line="160" Column="164" />
-      <File FileName="Tests/AddNewEducation.cs" Line="27" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Mars_Specflow" expanded="True">
             <Node name="Mars_Specflow" expanded="True">
-              <Node name="Dependencies" expanded="True" />
               <Node name="Features" expanded="True" />
-              <Node name="Pages" expanded="True" />
-              <Node name="Tests" expanded="True">
-                <Node name="AddNewEducation.cs" selected="True" />
+              <Node name="Helpers" expanded="True">
+                <Node name="Driver.cs" selected="True" />
               </Node>
+              <Node name="Pages" expanded="True" />
+              <Node name="Tests" expanded="True" />
               <Node name="Utilities" expanded="True" />
             </Node>
           </Node>
@@ -33,8 +36,9 @@
           <Node name="Mars_Specflow" expanded="True">
             <Node name="Mars_Specflow" expanded="True">
               <Node name="Mars_Specflow.Features" expanded="True">
-                <Node name="AddANewEducationFeature" expanded="True">
-                  <Node name="AddMyEducationDetails" selected="True" />
+                <Node name="AddNewCertificateFeature" expanded="True" />
+                <Node name="ChangePasswordFeature" expanded="True">
+                  <Node name="ChangeTheOldPasswordToANewOne" selected="True" />
                 </Node>
               </Node>
             </Node>

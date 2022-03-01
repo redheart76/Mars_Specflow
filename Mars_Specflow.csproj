@@ -69,10 +69,67 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>AddEducation.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\EditPersonalDetails.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EditPersonalDetails.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\AddNewSkill.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddNewSkill.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\AddNewEducation.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddNewEducation.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\AddDescriptionToProfile.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddDescriptionToProfile.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Pages\AddCertification.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddCertification.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Pages\AddCertificate.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddCertificate.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\AddCertificate.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddCertificate.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\ChangePassword.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ChangePassword.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Features\AddEducation.feature.cs">
       <DependentUpon>AddEducation.feature</DependentUpon>
     </Compile>
+    <Compile Update="Features\EditPersonalDetails.feature.cs">
+      <DependentUpon>EditPersonalDetails.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\AddNewSkill.feature.cs">
+      <DependentUpon>AddNewSkill.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\AddCertification.feature.cs">
+      <DependentUpon>AddCertification.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\ChangePassword.feature.cs">
+      <DependentUpon>ChangePassword.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Update="Pages\AddCertificate.feature.cs">
+      <DependentUpon>AddCertificate.feature</DependentUpon>
+    </SpecFlowObsoleteCodeBehindFiles>
   </ItemGroup>
 </Project>
