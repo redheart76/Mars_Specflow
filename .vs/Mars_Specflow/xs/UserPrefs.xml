@@ -1,16 +1,16 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{3158537B-B303-4B28-926C-930BFB6B7AB7}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Pages/ListingManagementPage.cs">
     <Files>
-      <File FileName="Features/EditPersonalDetails.feature" Line="1" Column="1" />
-      <File FileName="Features/ShareSkill.feature" />
-      <File FileName="Pages/ServiceListingPage.cs" Line="1" Column="1" />
-      <File FileName="Tests/AddSkill.cs" />
-      <File FileName="Pages/ProfilePage.cs" Line="138" Column="98" />
       <File FileName="Features/EditListedSkill.feature" />
       <File FileName="Features/DeleteListedSkill.feature" Line="9" Column="24" />
       <File FileName="Tests/DeleteListedSkill.cs" Line="38" Column="58" />
-      <File FileName="Pages/ListingManagementPage.cs" Line="38" Column="17" />
+      <File FileName="Pages/ListingManagementPage.cs" Line="32" Column="13" />
       <File FileName="Helpers/Driver.cs" Line="1" Column="1" />
+      <File FileName="Pages/ReceivedRequestPage.cs" Line="1" Column="1" />
+      <File FileName="Features/ReceivedRequest.feature" Line="9" Column="58" />
+      <File FileName="Tests/ViewReceivedRequest.cs" Line="32" Column="63" />
+      <File FileName="Features/SentRequest.feature" Line="6" Column="15" />
+      <File FileName="Tests/ViewSentRequests.cs" Line="36" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,12 +18,10 @@
           <Node name="Mars_Specflow" expanded="True">
             <Node name="Mars_Specflow" expanded="True">
               <Node name="Features" expanded="True" />
-              <Node name="Helpers" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="ListingManagementPage.cs" selected="True" />
+                <Node name="ProfilePage.cs" selected="True" />
               </Node>
               <Node name="Tests" expanded="True" />
-              <Node name="Utilities" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -33,9 +31,9 @@
           <Node name="Mars_Specflow" expanded="True">
             <Node name="Mars_Specflow" expanded="True">
               <Node name="Mars_Specflow.Features" expanded="True">
-                <Node name="AddNewSkillFeature" expanded="True" />
-                <Node name="DeleteListedSkillsFeature" expanded="True">
-                  <Node name="DeleteAListedSkill" selected="True" />
+                <Node name="ViewReceivedRequestFeature" expanded="True" />
+                <Node name="ViewSentRequestFeature" expanded="True">
+                  <Node name="SentRequest" selected="True" />
                 </Node>
               </Node>
             </Node>

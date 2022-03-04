@@ -60,12 +60,14 @@
     <None Remove="System.Security.Principal.Windows" />
     <None Remove="Tests\Profile Module\" />
     <None Remove="Tests\Manage Listings Module\" />
+    <None Remove="Tests\Manage Request Module\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Tests\" />
     <Folder Include="Features\" />
     <Folder Include="Tests\Profile Module\" />
     <Folder Include="Tests\Manage Listings Module\" />
+    <Folder Include="Tests\Manage Request Module\" />
   </ItemGroup>
   <ItemGroup>
     <SpecFlowFeatureFiles Update="Features\AddEducation.feature">
@@ -128,6 +130,16 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>DeleteListedSkill.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\ReceivedRequest.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ReceivedRequest.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SentRequest.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SentRequest.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Pages\AddCertification.feature.cs">
@@ -153,6 +165,12 @@
     </Compile>
     <Compile Update="Features\DeleteListedSkill.feature.cs">
       <DependentUpon>DeleteListedSkill.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\ReceivedRequest.feature.cs">
+      <DependentUpon>ReceivedRequest.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SentRequest.feature.cs">
+      <DependentUpon>SentRequest.feature</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

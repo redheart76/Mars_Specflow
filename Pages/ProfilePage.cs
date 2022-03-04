@@ -33,7 +33,7 @@ namespace Mars_Specflow.Pages
             Wait.WaitToBeClickable(Driver.driver, "Xpath", "/html/body/div/div/div/div[2]/div[1]/div[1]/table/tbody/tr/td[8]/div/button[2]/i", 3);
         }
 
-        public static void gotoReceivedRequestPage()
+        public static void ReceivedRequestDropDown()
         {
             Wait.WaitToBeClickable(Driver.driver, "Xpath", "/html/body/div[1]/div/section[1]/div/div[2]/a", 2);
 
@@ -41,13 +41,16 @@ namespace Mars_Specflow.Pages
             Actions actions = new Actions(Driver.driver);
             IWebElement uiDropdown = Driver.driver.FindElement(By.XPath("//*[text()='Manage Requests']"));
             actions.MoveToElement(uiDropdown).Perform();
+        }
 
-            //Click on Received Request
+         //Click on Received Request
+        public static void receivedRequestMenu()
+        {
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[1]/div/div[1]/div/a[1]")).Click();
 
         }
 
-        public static void gotoSentRequestPage()
+        public static void SentRequestDropDown()
         {
             Wait.WaitToBeClickable(Driver.driver, "Xpath", "/html/body/div[1]/div/section[1]/div/div[2]/a", 2);
 
@@ -55,9 +58,12 @@ namespace Mars_Specflow.Pages
             Actions actions = new Actions(Driver.driver);
             IWebElement uiDropdown = Driver.driver.FindElement(By.XPath("//*[text()='Manage Requests']"));
             actions.MoveToElement(uiDropdown).Perform();
+        }
 
             //Click on Sent Request
-            Driver.driver.FindElement(By.XPath("/html/body/div/div/div/section[1]/div/div[1]/div/a[2]")).Click();
+        public static void sentRequestsMenu()
+        {
+            Driver.driver.FindElement(By.XPath("//*[text()='Sent Requests']")).Click();
         }
 
        //Click on profile
