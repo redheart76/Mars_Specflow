@@ -61,6 +61,7 @@
     <None Remove="Tests\Profile Module\" />
     <None Remove="Tests\Manage Listings Module\" />
     <None Remove="Tests\Manage Request Module\" />
+    <None Remove="Tests\Search Skills Module\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Tests\" />
@@ -68,6 +69,7 @@
     <Folder Include="Tests\Profile Module\" />
     <Folder Include="Tests\Manage Listings Module\" />
     <Folder Include="Tests\Manage Request Module\" />
+    <Folder Include="Tests\Search Skills Module\" />
   </ItemGroup>
   <ItemGroup>
     <SpecFlowFeatureFiles Update="Features\AddEducation.feature">
@@ -140,6 +142,21 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SentRequest.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SearchByAllCategories.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SearchByAllCategories.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SearchBySubcategories.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SearchBySubcategories.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\SearchByFilters.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SearchByFilters.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Pages\AddCertification.feature.cs">
@@ -171,6 +188,12 @@
     </Compile>
     <Compile Update="Features\SentRequest.feature.cs">
       <DependentUpon>SentRequest.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SearchBySubcategories.feature.cs">
+      <DependentUpon>SearchBySubcategories.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\SearchByFilters.feature.cs">
+      <DependentUpon>SearchByFilters.feature</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -7,27 +7,33 @@ namespace Mars_Specflow.Pages
 {
     public class SearchPage
     {
-
-        //Click on Graphi&Design Category
-        public void GraphicsDesignCategory()
+        //Click on All Categories menu
+        public static void allCategoriesMenu()
         {
-            Driver.driver.FindElement(By.XPath("//*[@id='service - search - section']/div[2]/div/section/div/div[1]/div[1]/div/a[2]/b")).Click();
+            Driver.driver.FindElement(By.XPath("/html/body/div/div/div/div[2]/div/section/div/div[1]/div[1]/div/a[1]/b")).Click();
         }
 
-        //Click on Logo Design Sub-category
-        public void LogoDesignSubcategory()
+
+        //Assert search result(by all categories)
+        public static void resultByAllCategories()
         {
-            Driver.driver.FindElement(By.XPath("//*[@id='service - search - section']/div[2]/div/section/div/div[1]/div[1]/div/a[3]/b")).Click();
+            IWebElement searchResultAllCategories = Driver.driver.FindElement(By.XPath("//*[text()='Web Designer']"));
+            Assert.IsTrue(searchResultAllCategories.Displayed);
+        }
+        //Click on Graphi&Design Category
+        public static void GraphicsDesignCategory()
+        {
+            Driver.driver.FindElement(By.XPath("//*[text()='Graphics & Design']")).Click();
         }
 
 
         //Click on Web&MObile Design Sub-category
-        public void WebMobileDesign()
+        public static void WebMobileDesign()
         {
-            Driver.driver.FindElement(By.XPath("//*[@id='service - search - section']/div[2]/div/section/div/div[1]/div[1]/div/a[6]/b")).Click();
+            Driver.driver.FindElement(By.XPath("//*[text()='Web & Mobile Design']")).Click();
         }
 
-        //Assert search result
+        //Assert search result(by sub-categories)
         public static void searchResult()
         {
             IWebElement searchResultOfCategory = Driver.driver.FindElement(By.XPath("//*[text()='Sam Xu']"));
@@ -35,17 +41,18 @@ namespace Mars_Specflow.Pages
         }
 
         //Search by filters (name)
-        public void SearchByName()
+        public static void SearchByName()
         {
             //Enter the name as search condition
-            Driver.driver.FindElement(By.XPath("//*[@id='service - search - section']/div[2]/div/section/div/div[1]/div[3]/div[1]/div/div[1]/input")).Clear();
-            Driver.driver.FindElement(By.XPath("//*[@id='service - search - section']/div[2]/div/section/div/div[1]/div[3]/div[1]/div/div[1]/input")).SendKeys("tawa1");
+            //Driver.driver.FindElement(By.XPath("//*[@id='service - search - section']/div[2]/div/section/div/div[1]/div[3]/div[1]/div/div[1]/input")).Clear();
+            Driver.driver.FindElement(By.CssSelector("#service-search-section > div.ui.container > div > section > div > div.four.wide.column > div.ui.grid > div.left.floated.thirteen.wide.column > div > div.ui.icon.input.fluid > input")).SendKeys("tawa1");
         }
 
+      
         //Assert serch result(by name)
         public static void searchResultOfName()
         {
-            IWebElement searchResultbyName = Driver.driver.FindElement(By.XPath("/html/body/div/div/div/div[2]/div/section/div/div[1]/div[3]/div[1]/div/div[2]/div/div/span"));
+            IWebElement searchResultbyName = Driver.driver.FindElement(By.XPath("//*[text()='tawa1 tester']"));
             Assert.IsTrue(searchResultbyName.Displayed);
         }
     }

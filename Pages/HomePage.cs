@@ -43,5 +43,17 @@ namespace Mars_Specflow.Pages
             Driver.driver.FindElement(By.XPath("//html/body/div[2]/div/div/div[1]/div/div[4]/button")).Click();
 
         }
+
+        //Search a skill(by all categories)
+        public static void searchCondition()
+        {
+            Driver.driver.FindElement(By.XPath("/html/body/div/div/div/div/div/div[3]/div/input")).SendKeys("web design");
+        }
+
+        //Click on the search buttton
+        public static void searchSkillBTN()
+        {
+            Driver.driver.FindElement(By.XPath("/html/body/div/div/div/div/div/div[3]/div/button")).Click();
+        }
     }
 }

@@ -10,6 +10,12 @@ namespace Mars_Specflow.Pages
 {
     public class ProfilePage
     {
+        //Go to Home page
+        public static void goToHomePage()
+        {
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/div[1]/a")).Click();
+        }
+
         //Add a skill to share
         public static void gotoServiceListing()
         {

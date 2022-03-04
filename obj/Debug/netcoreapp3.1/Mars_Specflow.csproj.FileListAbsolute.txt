@@ -444,7 +444,6 @@
 /Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
 /Users/sam/Mars_Specflow/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll
-/Users/sam/Mars_Specflow/obj/Debug/netcoreapp3.1/Mars_Specflow.csproj.AssemblyReference.cache
 /Users/sam/Mars_Specflow/obj/Debug/netcoreapp3.1/Mars_Specflow.GeneratedMSBuildEditorConfig.editorconfig
 /Users/sam/Mars_Specflow/obj/Debug/netcoreapp3.1/Mars_Specflow.AssemblyInfoInputs.cache
 /Users/sam/Mars_Specflow/obj/Debug/netcoreapp3.1/Mars_Specflow.AssemblyInfo.cs
