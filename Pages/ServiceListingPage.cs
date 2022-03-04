@@ -8,7 +8,7 @@ namespace Mars_Specflow.Pages
     public class ServiceListingPage
     {
         
-       public void newSkill()
+       public static void newSkill()
        {
             //Type in new Title
             Driver.driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[1]/div/div[2]/div/div[1]/input")).SendKeys("Web Design");
@@ -26,7 +26,7 @@ namespace Mars_Specflow.Pages
             Driver.driver.FindElement(By.CssSelector("#service-listing-section > div.ui.container > div > form > div:nth-child(3) > div.twelve.wide.column > div > div:nth-child(2) > div:nth-child(1) > select")).Click();
 
             //Select Search & Display Marketing
-            Driver.driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[3]/div[2]/div/div[2]/div[1]/select/option[5]")).Clear();
+            Driver.driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[3]/div[2]/div/div[2]/div[1]/select/option[6]")).Click();
 
             //Add a new tag
             Driver.driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[4]/div[2]/div/div/div/div/input")).SendKeys("A" + "\n");
@@ -65,22 +65,23 @@ namespace Mars_Specflow.Pages
             Driver.driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[10]/div[2]/div/div[1]/div/input")).Click();
             
     }
-
-        public void saveSkill()
-        {
-            //Click on the save button to save the changes
-            Driver.driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[11]/div/input[1]")).Click();
-            
-        }
-
-        public void editDescription()
+        public static void editSkillDescription()
         {
             //Wait description text to be visable
             Wait.WaitToBeVisible(Driver.driver, "Xpath", "/html/body/div/div/div[1]/div[2]/div/form/div[2]/div/div[1]/h3", 2);
 
             //Edit the description
             Driver.driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[2]/div/div[2]/div[1]/textarea")).Clear();
-            Driver.driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[2]/div/div[2]/div[1]/textarea")).SendKeys("Design and build the website from scratch. Front end and back end development");
+            Driver.driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[2]/div/div[2]/div[1]/textarea")).SendKeys("Design and build the website from scratch,Front end and back end development. ");
         }
+
+        public static void saveSkill()
+        {
+            //Click on the save button to save the changes
+            Driver.driver.FindElement(By.XPath("/html/body/div/div/div[1]/div[2]/div/form/div[11]/div/input[1]")).Click();
+            
+        }
+
+       
     }
 }

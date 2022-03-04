@@ -58,10 +58,14 @@
     <None Remove="Features\" />
     <None Remove="System.CodeDom" />
     <None Remove="System.Security.Principal.Windows" />
+    <None Remove="Tests\Profile Module\" />
+    <None Remove="Tests\Manage Listings Module\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Tests\" />
     <Folder Include="Features\" />
+    <Folder Include="Tests\Profile Module\" />
+    <Folder Include="Tests\Manage Listings Module\" />
   </ItemGroup>
   <ItemGroup>
     <SpecFlowFeatureFiles Update="Features\AddEducation.feature">
@@ -109,27 +113,54 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ChangePassword.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\ShareSkill.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ShareSkill.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\EditListedSkill.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EditListedSkill.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\DeleteListedSkill.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DeleteListedSkill.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Features\AddEducation.feature.cs">
-      <DependentUpon>AddEducation.feature</DependentUpon>
-    </Compile>
-    <Compile Update="Features\EditPersonalDetails.feature.cs">
-      <DependentUpon>EditPersonalDetails.feature</DependentUpon>
-    </Compile>
-    <Compile Update="Features\AddNewSkill.feature.cs">
-      <DependentUpon>AddNewSkill.feature</DependentUpon>
-    </Compile>
     <Compile Update="Pages\AddCertification.feature.cs">
       <DependentUpon>AddCertification.feature</DependentUpon>
     </Compile>
-    <Compile Update="Features\ChangePassword.feature.cs">
+    <Compile Update="Features\ShareSkill.feature.cs">
+      <DependentUpon>ShareSkill.feature</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Features\AddEducation.feature.cs">
+      <DependentUpon>AddEducation.feature</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Features\AddNewSkill.feature.cs">
+      <DependentUpon>AddNewSkill.feature</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Features\ChangePassword.feature.cs">
       <DependentUpon>ChangePassword.feature</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Features\EditPersonalDetails.feature.cs">
+      <DependentUpon>EditPersonalDetails.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\EditListedSkill.feature.cs">
+      <DependentUpon>EditListedSkill.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\DeleteListedSkill.feature.cs">
+      <DependentUpon>DeleteListedSkill.feature</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <SpecFlowObsoleteCodeBehindFiles Update="Pages\AddCertificate.feature.cs">
       <DependentUpon>AddCertificate.feature</DependentUpon>
+    </SpecFlowObsoleteCodeBehindFiles>
+    <SpecFlowObsoleteCodeBehindFiles Update="Features\EditListedSkill.feature.cs">
+      <DependentUpon>EditListedSkill.feature</DependentUpon>
     </SpecFlowObsoleteCodeBehindFiles>
   </ItemGroup>
 </Project>

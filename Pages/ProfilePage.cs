@@ -10,7 +10,8 @@ namespace Mars_Specflow.Pages
 {
     public class ProfilePage
     {
-        public void gotoServiceListing()
+        //Add a skill to share
+        public static void gotoServiceListing()
         {
 
             Wait.WaitToBeClickable(Driver.driver, "Xpath", "/html/body/div[1]/div/section[1]/div/div[2]/a", 2);
