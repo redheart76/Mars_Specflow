@@ -413,5 +413,10 @@ namespace Mars_Specflow.Pages
             }
         }
 
+        //Go to the Message Page
+        public static void gotoMessagePage()
+        {
+            Driver.driver.FindElement(By.XPath("//*[text()=' Chat']")).Click();
+        }
     }
 }

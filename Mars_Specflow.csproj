@@ -63,6 +63,7 @@
     <None Remove="Tests\Manage Request Module\" />
     <None Remove="Tests\Search Skills Module\" />
     <None Remove="Tests\Notification Module\" />
+    <None Remove="Tests\Chat Module\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Tests\" />
@@ -72,6 +73,7 @@
     <Folder Include="Tests\Manage Request Module\" />
     <Folder Include="Tests\Search Skills Module\" />
     <Folder Include="Tests\Notification Module\" />
+    <Folder Include="Tests\Chat Module\" />
   </ItemGroup>
   <ItemGroup>
     <SpecFlowFeatureFiles Update="Features\AddEducation.feature">
@@ -169,6 +171,11 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>NotificationModule.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\ChectChatHistory.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ChectChatHistory.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Pages\AddCertification.feature.cs">
@@ -206,6 +213,9 @@
     </Compile>
     <Compile Update="Features\SearchByFilters.feature.cs">
       <DependentUpon>SearchByFilters.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\ChectChatHistory.feature.cs">
+      <DependentUpon>ChectChatHistory.feature</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
