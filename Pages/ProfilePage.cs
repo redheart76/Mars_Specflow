@@ -49,7 +49,7 @@ namespace Mars_Specflow.Pages
             actions.MoveToElement(uiDropdown).Perform();
         }
 
-         //Click on Received Request
+        //Click on Received Request
         public static void receivedRequestMenu()
         {
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[1]/div/div[1]/div/a[1]")).Click();
@@ -66,14 +66,14 @@ namespace Mars_Specflow.Pages
             actions.MoveToElement(uiDropdown).Perform();
         }
 
-            //Click on Sent Request
+        //Click on Sent Request
         public static void sentRequestsMenu()
         {
             Driver.driver.FindElement(By.XPath("//*[text()='Sent Requests']")).Click();
         }
 
-       //Click on profile
-       public static void myProfile()
+        //Click on profile
+        public static void myProfile()
         {
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[1]/div/a[2]")).Click();
         }
@@ -166,8 +166,8 @@ namespace Mars_Specflow.Pages
 
         public static void SkillDetails()
         {
- 
-           //Enter you skill
+
+            //Enter you skill
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[3]/div/div[2]/div/div/div[1]/input")).SendKeys("Web Development");
 
             //Click on dropdown menu
@@ -190,7 +190,7 @@ namespace Mars_Specflow.Pages
             IWebElement skillTxt = Driver.driver.FindElement(By.XPath("//*[text()='Web Development']"));
             Assert.IsTrue(skillTxt.Displayed);
         }
-        
+
         public static void clickOnEducation()
         {
             //Click on Education tab
@@ -203,10 +203,10 @@ namespace Mars_Specflow.Pages
             //Click on Add New button
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/table/thead/tr/th[6]/div")).Click();
         }
+
+
         public static void enterEducationDetails()
         {
-            
-            
 
             //Enter Uni name
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[1]/div[1]/input")).Clear();
@@ -228,8 +228,6 @@ namespace Mars_Specflow.Pages
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[2]/div[3]/select")).Click();
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[4]/div/div[2]/div/div/div[2]/div[3]/select/option[10]")).Click();
 
-            
-
         }
 
         public static void clickandSaveEducation()
@@ -245,7 +243,7 @@ namespace Mars_Specflow.Pages
             IWebElement UniNameTxt = Driver.driver.FindElement(By.XPath("//*[text()='Auckland University']"));
             Assert.IsTrue(UniNameTxt.Displayed);
         }
- 
+
 
         //Click on Descripton edit icon
         public static void addDescription()
@@ -256,7 +254,7 @@ namespace Mars_Specflow.Pages
 
         public static void enterDescriptionDetails()
         {
-        //Enter Description
+            //Enter Description
             Driver.driver.FindElement(By.XPath("//textarea[@name='value']")).Clear();
             Driver.driver.FindElement(By.XPath("//textarea[@name='value']")).SendKeys("Hi, I have a bunch of skills that can be swapped with you.");
 
@@ -273,7 +271,7 @@ namespace Mars_Specflow.Pages
         {
             IWebElement DescriptionText = Driver.driver.FindElement(By.XPath("//*[text()='Hi, I have a bunch of skills that can be swapped with you.']"));
             Assert.IsTrue(DescriptionText.Displayed);
-           
+
         }
 
         //Click on Certification tab
@@ -294,7 +292,7 @@ namespace Mars_Specflow.Pages
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[1]/div/input")).SendKeys("ISTQB");
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[2]/div[1]/input")).SendKeys("ISTQB");
 
-        //Click to select year of Cert from drop down 
+            //Click to select year of Cert from drop down 
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[2]/div[2]/select")).Click();
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/section[2]/div/div/div/div[3]/form/div[5]/div[1]/div[2]/div/div/div[2]/div[2]/select/option[3]")).Click();
 
@@ -314,7 +312,7 @@ namespace Mars_Specflow.Pages
         }
 
 
-        //Change the password to a new one
+
         //Hover the mouse and waiting for the menu to be displayed
         public static void uiDropdownHover()
         {
@@ -329,7 +327,7 @@ namespace Mars_Specflow.Pages
             Driver.driver.FindElement(By.XPath("//*[text()='Change Password']")).Click();
         }
 
-
+        //Change the password to a new one
         public static void changePassword()
         {
 
@@ -343,19 +341,19 @@ namespace Mars_Specflow.Pages
             Driver.driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/form/div[3]/input")).SendKeys("456456");
         }
 
-            //Click on save button to save the new password
+        //Click on save button to save the new password
         public static void savePW()
         {
             Driver.driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/form/div[4]/button")).Click();
         }
-           
+
 
         //Change the new password back to old password for further login purpose
         public static void reversePW()
         {
             Actions actions = new Actions(Driver.driver);
             IWebElement uiDropdown = Driver.driver.FindElement(By.XPath("//*[text()='Sam']"));
-            actions.MoveToElement(uiDropdown).Perform();  
+            actions.MoveToElement(uiDropdown).Perform();
             Thread.Sleep(6000);
             Driver.driver.FindElement(By.XPath("//*[text()='Change Password']")).Click();
             Driver.driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/form/div[1]/input")).SendKeys("456456");
@@ -369,11 +367,11 @@ namespace Mars_Specflow.Pages
         public static void gotoSearchPage()
         {
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div/div[1]/div[1]/i")).Click();
-          
+
         }
 
         //Go to the notification page
-        public void gotoNotificationPage()
+        public static void gotoNotificationPage()
         {
             Actions actions = new Actions(Driver.driver);
 
@@ -385,6 +383,35 @@ namespace Mars_Specflow.Pages
             //Click on See All
             Driver.driver.FindElement(By.XPath("//*[text()='See All...']")).Click();
         }
+
+        //Hover the mouse and waiting for the notification menu to be displayed
+        public static void noitificationDropdownHover()
+        {
+            Actions actions = new Actions(Driver.driver);
+            IWebElement notificationDropdown = Driver.driver.FindElement(By.XPath("//*[text()='Notification']"));
+            actions.MoveToElement(notificationDropdown).Perform();
+        }
+
+        //Click on Mark all as read
+        public static void markAll()
+        {
+            Driver.driver.FindElement(By.XPath("//*[text()='Mark all as read']")).Click();
+        }
+
+        //Assert the notification icon disappeared
+        public static bool IsNoitficationElementPresent()
+        {
+            try
+            {
+                Driver.driver.FindElement(By.XPath("/html/body/div/div/div/div[1]/div[2]/div/div/div[1]"));
+                return true;
+
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
+        }
+
     }
 }
-

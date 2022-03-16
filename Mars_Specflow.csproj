@@ -62,6 +62,7 @@
     <None Remove="Tests\Manage Listings Module\" />
     <None Remove="Tests\Manage Request Module\" />
     <None Remove="Tests\Search Skills Module\" />
+    <None Remove="Tests\Notification Module\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Tests\" />
@@ -70,6 +71,7 @@
     <Folder Include="Tests\Manage Listings Module\" />
     <Folder Include="Tests\Manage Request Module\" />
     <Folder Include="Tests\Search Skills Module\" />
+    <Folder Include="Tests\Notification Module\" />
   </ItemGroup>
   <ItemGroup>
     <SpecFlowFeatureFiles Update="Features\AddEducation.feature">
@@ -156,6 +158,16 @@
       <Visible>False</Visible>
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SearchByFilters.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\Notifications.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Notifications.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\NotificationModule.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NotificationModule.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
   </ItemGroup>
   <ItemGroup>

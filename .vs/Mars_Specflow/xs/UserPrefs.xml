@@ -1,10 +1,11 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{3158537B-B303-4B28-926C-930BFB6B7AB7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/SearchPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Features/NotificationModule.feature">
     <Files>
-      <File FileName="Pages/ProfilePage.cs" Line="18" Column="1" />
-      <File FileName="Features/SearchByFilters.feature" Line="1" Column="1" />
-      <File FileName="Tests/SearchSkillByFilters.cs" Line="32" Column="51" />
-      <File FileName="Pages/SearchPage.cs" Line="48" Column="132" />
+      <File FileName="Pages/ListingManagementPage.cs" Line="1" Column="1" />
+      <File FileName="Tests/Notifications.cs" />
+      <File FileName="Pages/NotificationPage.cs" Line="88" Column="10" />
+      <File FileName="Pages/ProfilePage.cs" />
+      <File FileName="Features/NotificationModule.feature" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,19 +14,7 @@
             <Node name="Mars_Specflow" expanded="True">
               <Node name="Features" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="SearchPage.cs" selected="True" />
-              </Node>
-              <Node name="Tests" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Mars_Specflow" expanded="True">
-            <Node name="Mars_Specflow" expanded="True">
-              <Node name="Mars_Specflow.Features" expanded="True">
-                <Node name="SearchSkillByFiltersFeature" selected="True" />
+                <Node name="NotificationPage.cs" selected="True" />
               </Node>
             </Node>
           </Node>

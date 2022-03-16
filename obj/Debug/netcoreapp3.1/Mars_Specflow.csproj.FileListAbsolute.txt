@@ -452,3 +452,4 @@
 /Users/sam/Mars_Specflow/obj/Debug/netcoreapp3.1/Mars_Specflow.dll
 /Users/sam/Mars_Specflow/obj/Debug/netcoreapp3.1/Mars_Specflow.pdb
 /Users/sam/Mars_Specflow/obj/Debug/netcoreapp3.1/Mars_Specflow.genruntimeconfig.cache
+/Users/sam/Mars_Specflow/obj/Debug/netcoreapp3.1/Mars_Specflow.csproj.AssemblyReference.cache
