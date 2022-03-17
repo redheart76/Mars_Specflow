@@ -54,7 +54,7 @@ namespace Mars_Specflow.Tests
             [When(@"I Click on the check box of the notification")]
             public void WhenIClickOnTheCheckBoxOfTheNotification()
             {
-            Pages.NotificationPage.checkBox1();
+            Pages.NotificationPage.checkBox3();
             }
 
             [When(@"I click on the Deletion tab")]
@@ -66,7 +66,7 @@ namespace Mars_Specflow.Tests
             [Then(@"Selected nitification will be deleted")]
             public void ThenSelectedNitificationWillBeDeleted()
             {
-            _scenarioContext.Pending();
+            Pages.NotificationPage.deletedElement();
             }
 
 

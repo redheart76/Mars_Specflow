@@ -57,7 +57,7 @@ namespace Mars_Specflow.Pages
         //Select a notification
         public static void checkBox3()
         {
-            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div[2]/div/div/div[3]/div[2]/span/span/div/div[4]/div/div/div[3]/input")).Click();
+            Driver.driver.FindElement(By.XPath("/html/body/div[1]/div[2]/div/div/div[3]/div[2]/span/span/div/div[2]/div/div/div[3]/input")).Click();
         }
 
         //Delete the selected notification
@@ -67,12 +67,28 @@ namespace Mars_Specflow.Pages
             Driver.driver.FindElement(By.XPath("/html/body/div[1]/div[2]/div/div/div[3]/div[1]/div[3]/i")).Click();
         }
 
-        public static void assertLoadedNotification()
+        //Assert the deletion fo notification
+        public static bool deletedElement()
+        {
+            try
+            {
+                Driver.driver.FindElement(By.XPath("//*[text()='Tawa1Tester withdraw the skill trade application']"));
+                return true;
+
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
+        }
+            //Assert load more notification that will be displayed
+            public static void assertLoadedNotification()
         {
             IWebElement sender = Driver.driver.FindElement(By.XPath("//*[text()='Updated at 14:36 on 7 February 2022']"));
             Assert.IsTrue(sender.Displayed);
         }
 
+        //Assert show less notification
         public static bool IsElementPresent()
         {
             try
