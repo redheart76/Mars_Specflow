@@ -3,9 +3,10 @@ namespace Mars_Specflow.Helpers
 {
     public class ConstantHelpers
     {
+
+        //Base Url
         
-            //Base Url
-        public static string Url = "http://192.168.20.122:5000/";
+        public static string Url = "http://localhost:5000/";
 
         //ScreenshotPath
         public static string ScreenshotPath = "/Users/sam/Mars_Specflow/TestReports/Screenshots";
