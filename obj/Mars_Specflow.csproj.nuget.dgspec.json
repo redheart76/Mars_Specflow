@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sam/Mars_Specflow/Mars_Specflow.csproj": {}
+    "/Users/sam/Desktop/Mars_Specflow/Mars_Specflow.csproj": {}
   },
   "projects": {
-    "/Users/sam/Mars_Specflow/Mars_Specflow.csproj": {
+    "/Users/sam/Desktop/Mars_Specflow/Mars_Specflow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sam/Mars_Specflow/Mars_Specflow.csproj",
+        "projectUniqueName": "/Users/sam/Desktop/Mars_Specflow/Mars_Specflow.csproj",
         "projectName": "Mars_Specflow",
-        "projectPath": "/Users/sam/Mars_Specflow/Mars_Specflow.csproj",
+        "projectPath": "/Users/sam/Desktop/Mars_Specflow/Mars_Specflow.csproj",
         "packagesPath": "/Users/sam/.nuget/packages/",
-        "outputPath": "/Users/sam/Mars_Specflow/obj/",
+        "outputPath": "/Users/sam/Desktop/Mars_Specflow/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sam/.config/NuGet/NuGet.Config"
@@ -112,7 +112,7 @@
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[98.0.4758.10200, )"
+              "version": "[99.0.4844.5100, )"
             },
             "SpecFlow": {
               "target": "Package",
@@ -150,7 +150,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.405/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
         }
       }
     }

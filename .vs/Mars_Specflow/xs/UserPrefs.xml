@@ -1,14 +1,14 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{3158537B-B303-4B28-926C-930BFB6B7AB7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Helpers/ExcelLibHelper.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="Pages/ListingManagementPage.cs" Line="1" Column="1" />
       <File FileName="Pages/NotificationPage.cs" />
       <File FileName="Features/NotificationModule.feature" />
       <File FileName="Pages/MessagePage.cs" />
       <File FileName="Pages/HomePage.cs" />
-      <File FileName="Helpers/ConstantHelpers.cs" Line="1" Column="1" />
-      <File FileName="Helpers/Driver.cs" Line="1" Column="1" />
-      <File FileName="Helpers/CommonMethods.cs" Line="1" Column="1" />
+      <File FileName="Helpers/ConstantHelpers.cs" />
+      <File FileName="Helpers/Driver.cs" />
+      <File FileName="Helpers/CommonMethods.cs" />
       <File FileName="Helpers/ExcelLibHelper.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -16,13 +16,17 @@
         <State name="__root__">
           <Node name="Mars_Specflow" expanded="True">
             <Node name="Mars_Specflow" expanded="True">
-              <Node name="Helpers" expanded="True">
-                <Node name="ConstantHelpers.cs" selected="True" />
-              </Node>
-              <Node name="Tests" expanded="True">
-                <Node name="Chat Module" expanded="True" />
-                <Node name="Notification Module" expanded="True" />
-              </Node>
+              <Node name="Helpers" expanded="True" />
+              <Node name="TestReports" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Mars_Specflow" expanded="True" selected="True">
+            <Node name="Mars_Specflow" expanded="True">
+              <Node name="Mars_Specflow.Features" expanded="True" />
             </Node>
           </Node>
         </State>
